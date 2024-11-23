@@ -14,3 +14,470 @@ class Config:
     AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
     CONTAINER_NAME = os.getenv("CONTAINER_NAME")
 
+{
+	"status": "succeeded",
+	"createdDateTime": "2024-11-23T02:55:04Z",
+	"lastUpdatedDateTime": "2024-11-23T02:55:07Z",
+	"analyzeResult": {
+		"apiVersion": "2024-07-31-preview",
+		"modelId": "prebuilt-creditCard",
+		"stringIndexType": "utf16CodeUnit",
+		"content": "PagBank\n1234 5678 9101 1788\n08/23 RODRIGO C PEREIRA\nVISA",
+		"pages": [
+			{
+				"pageNumber": 1,
+				"angle": 0,
+				"width": 254,
+				"height": 198,
+				"unit": "pixel",
+				"words": [
+					{
+						"content": "PagBank",
+						"polygon": [
+							152,
+							59,
+							190,
+							60,
+							190,
+							71,
+							152,
+							71
+						],
+						"confidence": 0.936,
+						"span": {
+							"offset": 0,
+							"length": 7
+						}
+					},
+					{
+						"content": "1234",
+						"polygon": [
+							32,
+							104,
+							66,
+							104,
+							66,
+							119,
+							33,
+							120
+						],
+						"confidence": 0.988,
+						"span": {
+							"offset": 8,
+							"length": 4
+						}
+					},
+					{
+						"content": "5678",
+						"polygon": [
+							73,
+							104,
+							107,
+							104,
+							107,
+							119,
+							74,
+							119
+						],
+						"confidence": 0.816,
+						"span": {
+							"offset": 13,
+							"length": 4
+						}
+					},
+					{
+						"content": "9101",
+						"polygon": [
+							114,
+							104,
+							148,
+							104,
+							148,
+							119,
+							114,
+							119
+						],
+						"confidence": 0.99,
+						"span": {
+							"offset": 18,
+							"length": 4
+						}
+					},
+					{
+						"content": "1788",
+						"polygon": [
+							155,
+							105,
+							187,
+							105,
+							187,
+							119,
+							155,
+							119
+						],
+						"confidence": 0.602,
+						"span": {
+							"offset": 23,
+							"length": 4
+						}
+					},
+					{
+						"content": "08/23",
+						"polygon": [
+							81,
+							131,
+							110,
+							131,
+							109,
+							140,
+							80,
+							139
+						],
+						"confidence": 0.728,
+						"span": {
+							"offset": 28,
+							"length": 5
+						}
+					},
+					{
+						"content": "RODRIGO",
+						"polygon": [
+							31,
+							144,
+							64,
+							144,
+							64,
+							152,
+							31,
+							151
+						],
+						"confidence": 0.951,
+						"span": {
+							"offset": 34,
+							"length": 7
+						}
+					},
+					{
+						"content": "C",
+						"polygon": [
+							68,
+							144,
+							72,
+							143,
+							72,
+							152,
+							68,
+							152
+						],
+						"confidence": 0.916,
+						"span": {
+							"offset": 42,
+							"length": 1
+						}
+					},
+					{
+						"content": "PEREIRA",
+						"polygon": [
+							76,
+							143,
+							108,
+							144,
+							109,
+							152,
+							76,
+							152
+						],
+						"confidence": 0.924,
+						"span": {
+							"offset": 44,
+							"length": 7
+						}
+					},
+					{
+						"content": "VISA",
+						"polygon": [
+							151,
+							136,
+							191,
+							136,
+							191,
+							156,
+							151,
+							156
+						],
+						"confidence": 0.988,
+						"span": {
+							"offset": 52,
+							"length": 4
+						}
+					}
+				],
+				"lines": [
+					{
+						"content": "PagBank",
+						"polygon": [
+							132,
+							57,
+							191,
+							58,
+							191,
+							72,
+							132,
+							71
+						],
+						"spans": [
+							{
+								"offset": 0,
+								"length": 7
+							}
+						]
+					},
+					{
+						"content": "1234 5678 9101 1788",
+						"polygon": [
+							31,
+							104,
+							188,
+							104,
+							188,
+							119,
+							31,
+							119
+						],
+						"spans": [
+							{
+								"offset": 8,
+								"length": 19
+							}
+						]
+					},
+					{
+						"content": "08/23",
+						"polygon": [
+							66,
+							130,
+							111,
+							130,
+							110,
+							139,
+							66,
+							138
+						],
+						"spans": [
+							{
+								"offset": 28,
+								"length": 5
+							}
+						]
+					},
+					{
+						"content": "RODRIGO C PEREIRA",
+						"polygon": [
+							30,
+							143,
+							109,
+							143,
+							109,
+							151,
+							30,
+							151
+						],
+						"spans": [
+							{
+								"offset": 34,
+								"length": 17
+							}
+						]
+					},
+					{
+						"content": "VISA",
+						"polygon": [
+							152,
+							136,
+							191,
+							136,
+							191,
+							156,
+							151,
+							156
+						],
+						"spans": [
+							{
+								"offset": 52,
+								"length": 4
+							}
+						]
+					}
+				],
+				"spans": [
+					{
+						"offset": 0,
+						"length": 56
+					}
+				]
+			}
+		],
+		"styles": [],
+		"documents": [
+			{
+				"docType": "creditCard",
+				"boundingRegions": [
+					{
+						"pageNumber": 1,
+						"polygon": [
+							0,
+							0,
+							254,
+							0,
+							254,
+							198,
+							0,
+							198
+						]
+					}
+				],
+				"fields": {
+					"CardHolderName": {
+						"type": "string",
+						"content": "RODRIGO C PEREIRA",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									31,
+									142,
+									109,
+									144,
+									109,
+									153,
+									31,
+									151
+								]
+							}
+						],
+						"confidence": 0.995,
+						"spans": [
+							{
+								"offset": 34,
+								"length": 17
+							}
+						]
+					},
+					"CardNumber": {
+						"type": "string",
+						"content": "1234 5678 9101 1788",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									32,
+									104,
+									187,
+									104,
+									187,
+									120,
+									32,
+									120
+								]
+							}
+						],
+						"confidence": 0.995,
+						"spans": [
+							{
+								"offset": 8,
+								"length": 19
+							}
+						]
+					},
+					"ExpirationDate": {
+						"type": "date",
+						"content": "08/23",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									81,
+									131,
+									110,
+									131,
+									109,
+									140,
+									80,
+									139
+								]
+							}
+						],
+						"confidence": 0.995,
+						"spans": [
+							{
+								"offset": 28,
+								"length": 5
+							}
+						]
+					},
+					"IssuingBank": {
+						"type": "string",
+						"content": "PagBank",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									152,
+									59,
+									190,
+									60,
+									190,
+									71,
+									152,
+									71
+								]
+							}
+						],
+						"confidence": 0.881,
+						"spans": [
+							{
+								"offset": 0,
+								"length": 7
+							}
+						]
+					},
+					"PaymentNetwork": {
+						"type": "string",
+						"content": "VISA",
+						"boundingRegions": [
+							{
+								"pageNumber": 1,
+								"polygon": [
+									151,
+									136,
+									191,
+									136,
+									191,
+									156,
+									151,
+									156
+								]
+							}
+						],
+						"confidence": 0.995,
+						"spans": [
+							{
+								"offset": 52,
+								"length": 4
+							}
+						]
+					}
+				},
+				"confidence": 1,
+				"spans": [
+					{
+						"offset": 0,
+						"length": 56
+					}
+				]
+			}
+		],
+		"contentFormat": "text"
+	}
+}
+
