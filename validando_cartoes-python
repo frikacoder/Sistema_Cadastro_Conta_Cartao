@@ -1,0 +1,16 @@
+Endpoint = "https://doc-dio-fraude-east-us-dev007.cognitiveservices.azure.com/"
+subscription_key = "key"
+azure_storage_connection_string = "key_connection==
+container_name = "cartoes"
+
+import os
+from dotenv import load_dotenv # type: ignore
+
+load_dotenv()
+
+class Config:
+    ENDPOINT = os.getenv("ENDPOINT")
+    KEY = os.getenv("SUBSCRIPTION_KEY")
+    AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+    CONTAINER_NAME = os.getenv("CONTAINER_NAME")
+
